@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <section>
+      <div class="topo">
+        <h3>Our Pricing</h3>
+        <div class="checkk">
+          <span>Annually</span>
+          <label class="switch">
+            <input onclick="myFunctionC()" type="checkbox" id="myCheck">
+            <span class="slider"></span>
+          </label>
+          <span>Monthly</span>
+        </div>
+      </div>
+      <div class="content">
+        <div class="cards">
+          <div onclick="myFunction1()" id="cards-content">
+            <h3>Basic</h3>
+            <span class="price v1">&dollar;199.99</span>
+            <span class="line"></span>
+            <span>500 GB Storage</span>
+            <span class="line"></span>
+            <span>2 Users Allowed</span>
+            <span class="line"></span>
+            <span>Send up to 3 GB</span>
+            <span class="line"></span>
+            <a href="#">Learn More</a href="#">
+          </div>
+          <div onclick="myFunction2()" id="cards-content2">
+            <h3>Professional</h3>
+            <span class="price v2">&dollar;249.99</span>
+            <span class="line"></span>
+            <span>1 TB Storage</span>
+            <span class="line"></span>
+            <span>5 Users Allowed</span>
+            <span class="line"></span>
+            <span>Send up to 10 GB</span>
+            <span class="line"></span>
+            <a href="#">Learn More</a>
+          </div>
+          <div onclick="myFunction3()" id="cards-content3">
+            <h3>Master</h3>
+            <span class="price v3">&dollar;399.99</span>
+            <span class="line"></span>
+            <span>2 TB Storage</span>
+            <span class="line"></span>
+            <span>10 Users Allowed</span>
+            <span class="line"></span>
+            <span>Send up to 20 GB</span>
+            <span class="line"></span>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/genariocoliveira" target="_blank">Genário Carneiro</a>.
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
