@@ -1,15 +1,23 @@
-function myFunction1() {
-  var element = document.querySelector("#cards-content");
-  element.classList.toggle("active");
-}
-function myFunction2() {
-  var element = document.querySelector("#cards-content2");
-  element.classList.toggle("active");
-}
-function myFunction3() {
-  var element = document.getElementById("cards-content3");
-  element.classList.toggle("active");
-}
+const card = document.getElementById('cards-content')
+const card2 = document.getElementById('cards-content2')
+const card3 = document.getElementById('cards-content3')
+
+card.addEventListener('click', ()=>{
+  card.classList.toggle('active')
+  card2.classList.remove('active')
+  card3.classList.remove('active')
+})
+card2.addEventListener('click', ()=>{
+  card2.classList.toggle('active')
+  card.classList.remove('active')
+  card3.classList.remove('active')
+})
+card3.addEventListener('click', ()=>{
+  card3.classList.toggle('active')
+  card.classList.remove('active')
+  card2.classList.remove('active')
+})
+
 
 var v1 = document.querySelector('.v1')
 var v2 = document.querySelector('.v2')
@@ -18,13 +26,13 @@ function myFunctionC() {
   var checkBox = document.getElementById("myCheck");
   if (checkBox.checked == true){
     console.log('true')
-    v1.innerHTML='&dollar;19.99'
-    v2.innerHTML='&dollar;24.99'
-    v3.innerHTML='&dollar;39.99'
+    v1.innerHTML='R&dollar; 19.99'
+    v2.innerHTML='R&dollar; 24.99'
+    v3.innerHTML='R&dollar; 39.99'
   } else {
      console.log('false')
-     v1.innerHTML='&dollar;199.99'
-     v2.innerHTML='&dollar;249.99'
-     v3.innerHTML='&dollar;399.99'
+     v1.innerHTML='R&dollar; 199.99'
+     v2.innerHTML='R&dollar; 249.99'
+     v3.innerHTML='R&dollar; 399.99'
   }
 }
